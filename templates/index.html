@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<form>
+    <label> Username:
+        <input name='username' type='text' value={{username}} >
+    </label>
+    <p class="error">{{user_error}}</p>
+    <label>Password:
+        <input name='password' type='password' value={{password}}>
+    </label>
+    <p class="error">{{pass_error}}</p>
+    <input type='submit' value='Log In'/>
+</form>
+
+{% endblock%}
